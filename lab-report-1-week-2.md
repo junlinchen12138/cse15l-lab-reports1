@@ -79,11 +79,16 @@ $ scp /Users/joe/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_keys
 * you can write  acommand behind the ssh command to run it in the remote server like `$ ssh cs15lwi22@ieng6.ucsd.edu "ls"` 
 ![Image](lab1314.PNG)
 you may also run multiple commands on the same line by using semicolons. As an example,
-![Image](commad1.PNG)
+
+![Image](0101.PNG)
+
 you can also used the up-arrow to recall the previous command and the ctrl-arrow to alter the comment.
-![Image](commad2.PNG)
+
+![Image](0202.PNG)
+
 you can used scp to copy the code from my machine to the distant server, then built the code that was copied, and ran the code that was produced on the remote server on the same line.
-![Image](commad3.PNG)
+
+![Image](0303.PNG)
 
 
 
