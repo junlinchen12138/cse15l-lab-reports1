@@ -1,14 +1,14 @@
 # lab 1 report - Junlin Chen
 # *how to log into a course-specific account on ieng6*
-## 1.
+## 1.Visual Studio Code
 ![Image](lab245.PNG)
 * go to the website https://code.visualstudio.com/ to download the VS code.
-## 2.
+## 2.Remotely Connecting
 ![Image](lab2323.PNG)
-* First, you should download OpenSSH to your computer using the link https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse and follow the instruction.
-* Then using this link https://sdacs.ucsd.edu/~icc/index.php to found your account for CSE15L
+* First, you should download OpenSSH to your computer using the [link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) and follow the instruction.
+* Then using this link [link](https://sdacs.ucsd.edu/~icc/index.php) to found your account for CSE15L
 * Next open the VScode, in the terminal, type in `$ ssh cs15lwi22zz@ieng6.ucsd.edu` (you should replace it by your own account) and enter your password.
-## 3. 
+## 3. Run Some Commands
 ![Image](lab678.PNG)
 * try to run these command and to see what happened.
 * ## `cd ~`
@@ -19,7 +19,7 @@
 * ## `cp /home/linux/ieng6/cs15lwi22/public/hello.txt ~/`
 * ## `cat /home/linux/ieng6/cs15lwi22/public/hello.txt`
 * you can use Ctrl-D to exit your account.
-## 4.
+## 4.Moving Files over SSH with scp
 ![Image](lab.PNG)
 * we will try to copy a file using the command scp.
 * create a file on VS code called `WhereAmI.java` and put the following contents into it:
@@ -34,7 +34,7 @@ class WhereAmI {
 }
 ```
 * Then run it using javac and java. In the terminal, run this command `scp WhereAmI.java cs15lwi22zz@ieng6.ucsd.edu:~/` and record how long it take you to done all these step.
-## 5. 
+## 5. SSH Keys
 ![Image](lab676.PNG)
 * since repetively typing our password is annoying, we are using `-ssh` keys to help us avoid that. 
 * Here’s what you should run to set this up:
@@ -62,7 +62,7 @@ The key's randomart image is:
 |             ..  |
 +----[SHA256]-----+
 ```
-* if you are using Windows system, you should go to this Link and follow the steps - https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation
+* if you are using Windows system, you should go to this Link and follow the steps - [Link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation)
 Now, we have to copy the public key to the .ssh directory of your user account on the server.
 ```
 $ ssh cs15lwi22zz@ieng6.ucsd.edu
@@ -75,6 +75,15 @@ $ scp /Users/joe/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_keys
 # You use your username and the path you saw in the command above
 ```
 * After you down this, you don't need to type your password when using `-scp` or `-ssh`
-## 6.
+## 6.Optimizing Remote Running
+* you can write  acommand behind the ssh command to run it in the remote server like `$ ssh cs15lwi22@ieng6.ucsd.edu "ls"` 
 ![Image](lab1314.PNG)
-* you can write  acommand behind the ssh command to run it in the remote server like `$ ssh cs15lwi22@ieng6.ucsd.edu "ls"` or you can use semicolons to run multiple commands on the same line in most terminals like `$ cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI`
+you may also run multiple commands on the same line by using semicolons. As an example,
+![Image](a.PNG)
+you can also used the up-arrow to recall the previous command and the ctrl-arrow to alter the comment.
+![Image](b.PNG)
+you can used scp to copy the code from my machine to the distant server, then built the code that was copied, and ran the code that was produced on the remote server on the same line.
+![Image](c.PNG)
+
+
+
