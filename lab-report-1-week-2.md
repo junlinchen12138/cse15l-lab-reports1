@@ -79,13 +79,9 @@ $ scp /Users/joe/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_keys
 * you can write  acommand behind the ssh command to run it in the remote server like `$ ssh cs15lwi22@ieng6.ucsd.edu "ls"` 
 ![Image](lab1314.PNG)
 you may also run multiple commands on the same line by using semicolons. As an example,
-<<<<<<< HEAD
 
 ![Image](0101.PNG)
 
-=======
-![Image](lab1314.PNG)
->>>>>>> 012ea9480040b7144392158a0cf0f6bed06569ad
 you can also used the up-arrow to recall the previous command and the ctrl-arrow to alter the comment.
 
 ![Image](0202.PNG)
