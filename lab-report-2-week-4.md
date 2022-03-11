@@ -23,6 +23,7 @@ when it cotains mutiple links the output will be mess up the bug is that LAST oc
   java -cp lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar:. MarkdownParse new-test3.md
   [something.com]
 ```
+![Image](bug2.png)
 # Third code change - Multiple Delimeters
 We discovered that some markdown links are contained within carrots rather than in parentheses.
 ![image](22.png)
@@ -31,3 +32,4 @@ Link to the test file.
 When the link utilized carrots instead of parentheses, the symptom was erroneous output; the failure-inducing input was when the md file had carrots; and the problem was that we only had a delimter for parentheses, not carrots. We solved the problem by installing a second delimeter for carrots.
 ```
   java -cp lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar:. MarkdownParse testt-file-1.md
+![Image](bug3.png)
