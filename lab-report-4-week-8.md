@@ -4,7 +4,9 @@
 
 # snippet 1
 Test:
+
 ![image](test.PNG)
+
 Espected output: ``['google.com, google.com, ucsd.edu]``
 My output:
 ![image](myoutput1.PNG) 
@@ -15,7 +17,9 @@ indexes.
 
 # snippet 2
 Test:
+
 ![image](test2.PNG) 
+
 Espected output: ``[a.com, a.com(()), example.com]``
 My output:
 ![image](myoutput2.PNG) 
@@ -26,7 +30,9 @@ searches for the last parentheses
 
 # snippet 3
 Test:
+
 ![image](test3.PNG) 
+
 Espected output: ``[https://ucsd-cse15l-w22.github.io/]``
 My output:
 ![image](myoutput3.PNG) 
