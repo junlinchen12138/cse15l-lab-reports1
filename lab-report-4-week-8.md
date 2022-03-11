@@ -4,4 +4,6 @@
 
 # snippet 1
 Test:
+![Image](test.png)
+
 
