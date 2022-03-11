@@ -5,5 +5,6 @@
 # snippet 1
 Test:
 ![Image](test.png)
+Espect output: ``['google.com, google.com, ucsd.edu]``
 
 
