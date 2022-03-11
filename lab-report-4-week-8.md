@@ -31,7 +31,7 @@ Espected output: ``[https://ucsd-cse15l-w22.github.io/]``
 My output:
 ![Image](myoutput3.png)
 reviewed code output:
-
+![Image](output3.png)
 In test case 3, there would be an easy code change as it would just be a matter of trimming the white space between brackets and parentheses when getting links.
 
  
