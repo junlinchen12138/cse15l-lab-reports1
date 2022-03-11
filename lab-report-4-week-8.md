@@ -4,7 +4,7 @@
 
 # snippet 1
 Test:
-![image](test.png)
+![image](test.PNG)
 Espected output: ``['google.com, google.com, ucsd.edu]``
 My output:
 ![image](myoutput1.png) <br>
