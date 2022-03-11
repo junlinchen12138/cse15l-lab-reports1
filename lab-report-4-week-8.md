@@ -4,34 +4,34 @@
 
 # snippet 1
 Test:
-![Image](1test.png)
+![image](1test.png)
 Espected output: ``['google.com, google.com, ucsd.edu]``
 My output:
-![Image](1myoutput1.png)
+![image](1myoutput1.png)
 reviewed code output:
-![Image](1output1.png)
+![image](1output1.png)
 As backticks don't have different symbols for open and close, I could simply use a counter to determine which backtick is open/close and store pairs of open/close backtick
 indexes.
 
 # snippet 2
 Test:
-![Image](1test2.png)
+![image](1test2.png)
 Espected output: ``[a.com, a.com(()), example.com]``
 My output:
-![Image](1myoutput2.png)
+![image](1myoutput2.png)
 reviewed code output:
-![Image](1output2.png)
+![image](1output2.png)
 A simple code change could not fix this program. Rather than searching directly for the next closing parentheses, I could instead add a method similar to the one in Lab 8 that
 searches for the last parentheses
 
 # snippet 3
 Test:
-![Image](1test3.png)
+![image](1test3.png)
 Espected output: ``[https://ucsd-cse15l-w22.github.io/]``
 My output:
-![Image](1myoutput3.png)
+![image](1myoutput3.png)
 reviewed code output:
-![Image](1output3.png)
+![image](1output3.png)
 In test case 3, there would be an easy code change as it would just be a matter of trimming the white space between brackets and parentheses when getting links.
 
  
