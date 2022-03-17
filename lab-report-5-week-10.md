@@ -1,6 +1,6 @@
 ## Lab report 5 - week 10
 
-For both tests, I use command ``diff`` to found the differences.
+For both tests, I use command ``diff`` to compare the results.txt file, which is created by running the command `bash script.sh > results.txt`
 
 # Test 497:
 
