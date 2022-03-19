@@ -29,7 +29,7 @@ The expected Output is `[foo(and(bar]`
 
 In this case, neither implementation is correct because the Link should be included.
 My code could not detect the bracket. in order to fix it, we have to write a code to 
-find if offending brackets are within <>.
+find if offending brackets are within <>
 
 
 
